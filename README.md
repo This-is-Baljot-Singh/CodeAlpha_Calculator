@@ -65,9 +65,3 @@ A modern, responsive calculator built with **HTML**, **CSS**, and **JavaScript**
 ## 📄 License
 
 This project is intended for educational and personal use. Feel free to modify and expand it to suit your needs.
-
----
-
-## 🙌 Acknowledgements
-
-Part of the **CodeAlpha** internship tasks.
