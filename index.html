@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Calculator</h1>
+    <p>Simple and elegant</p>
+  </div>
+  <div class="calc-container">
+    <!-- Display -->
+    <div class="calc-display">
+      <div class="text-right">
+        <div id="prev"></div>
+        <div id="display">0</div>
+      </div>
+    </div>
+
+    <!-- Button Grid -->
+    <div class="button-grid">
+      <!-- Row 1 -->
+      <button id="clear" class="calc-btn col-span-2">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADRUlEQVR4nO2aW0tVQRTHByoLNFG7PgT5Vgml9RmiMOzyYCX1GYzoW2iWiVFv1UuvXcyg+gAREUZFeSkMzILKguqlOtEvpr2Ccc7aZ7vPvrhP+IMDetjOmr9r1qw1a7YxS/ynAM3AQeA0cBuYAD4DP+TzSb4bBfqBQ0CjKQLASuA4cAf4RXxKwD3gqB3LVLZlhX8A3gMH0hKwCjgFvCU93gG9YYI8W7NpiOgEXpEd08Buxe48knrhQsQkxoABoBvYIXGzAqiTn+13R4AzwJMK4/wGLrreSUUIsAF4FGL0C9AHbKli3G0i/GvI2PeBjakIAVqBl4qRn7JDNcUetNzGWuCsBL/PFLApkRDxhCbiuV0mSQUo9nYB44q9sjnEjQltOV0D6tMW4dhtBEYUu1UL0QL7ErAsKxH/AJYDVxMLkS1W80QmIoB9wOsoL8QSItl60vs7+/vqLESIzZk4IiwLGdRmbH93Sj2wPZtviIlZgDf8sqM/SxHOUrYZPTUhtgD0k13iPJE7wF1PSJ+pNQhqIb8Uj112LDoE9b7LmKlFCIo3lwFTixAcQV26TS1CUGW6bDe1CDDnCWkxBYSgnJmVT6f2gO10uNSZAsL8mmy6JoUQVB4u3xeytNaYgkFwknT5qD00WfRgB9q9OY7X5PZL0IFxGdEeso2EQidEYDCyFpS+rctjUzCAZ94cu7SHmpSicaspCECbcuDTm+DSjM71UJWgFhyt9PAx5WDVnOuMFWwqAL55c+uJSjizRQt64Jw3p5nIhA2cVNZie26z9gB2Kq3UXhOFeMXeLOXWDqowl3rghTeXqahLIXeAvZRzPY8uo9dtvKlcN5TdnVQEOK+IuZxjy/SKYn+omsHsEnuoDHYDaMhEgflrt0HxhOVB1RU5sF45OSKt/46MAntCsWdjdF3SwVtDxJTkcqYlpTxht9hSiIjNSW24ntGWGXJtZgvOtirLjgEl2bnLKZknQmJmmMo8FS8dlrNDi1yE1sl/vUNK8UGlAHSxu9NQpqdUYE/IUkuLidhbbELvnKjmOqACtuwIfWEga0F2yfTIuydaoEZRkpNpT2GaHQSXmPvlhZlbskXPOS/VzEm5MSL38l2LUfYsYXLiD+5LaXaqk4ArAAAAAElFTkSuQmCC" alt="recurring-appointment">
+        Clear
+      </button>
+      <button id="delete" class="calc-btn">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0klEQVR4nO2UMQrCQBBFA7ZauiSFZ1DwEoJexFTew8KDWHgPsTKKtTmCrcKTlRHWZULEbBKL/Gr3/2X+8Hd3oqjD3wGYAmeqIQdmWvGBiCGQawYbEfdAr0IKL2jRPIA7MPa0JWCUQsZqpQa2W+Ag/No7nAqfuSZS3HIWaZnBSrgr0PcOD4Gj6BcgUbi40AAYATfh5gWZGqfbzFtr0X0Y7GS/1Yq/4XWtdl6HQfKNgRvRInhEP1xyrF18u89U+WiTKORHa2RUNDLsnKhOtYzrDq3gCcdDNq74jDsEAAAAAElFTkSuQmCC" alt="clear-symbol--v1">
+      </button>
+      <button data-op="÷" class="calc-btn op">÷</button>
+
+      <!-- Row 2 -->
+      <button data-num="7" class="calc-btn">7</button>
+      <button data-num="8" class="calc-btn">8</button>
+      <button data-num="9" class="calc-btn">9</button>
+      <button data-op="×" class="calc-btn op">×</button>
+
+      <!-- Row 3 -->
+      <button data-num="4" class="calc-btn">4</button>
+      <button data-num="5" class="calc-btn">5</button>
+      <button data-num="6" class="calc-btn">6</button>
+      <button data-op="-" class="calc-btn op">−</button>
+
+      <!-- Row 4 -->
+      <button data-num="1" class="calc-btn">1</button>
+      <button data-num="2" class="calc-btn">2</button>
+      <button data-num="3" class="calc-btn">3</button>
+      <button data-op="+" class="calc-btn op">+</button>
+
+      <!-- Row 5 -->
+      <button data-num="0" class="calc-btn col-span-2">0</button>
+      <button id="decimal" class="calc-btn">.</button>
+      <button id="equals" class="calc-btn">=</button>
+    </div>
+
+    <!-- Keyboard hint -->
+    <div class="keyboard-hint">
+      Keyboard supported • Press Esc to clear
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
