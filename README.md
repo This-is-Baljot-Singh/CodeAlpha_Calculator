@@ -18,10 +18,10 @@ A modern, responsive calculator built with **HTML**, **CSS**, and **JavaScript**
 
 ## 📁 Project Structure
 
-├── index.html # Main layout and display container
-├── styles.css # UI styling, theming, responsiveness
-├── script.js # Functionality and logic (if included)
-└── README.md # Project overview and documentation
+├── index.html # Main layout and display container <br>
+├── styles.css # UI styling, theming, responsiveness <br>
+├── script.js # Functionality and logic <br>
+└── README.md # Project overview and documentation <br>
 
 ---
 
